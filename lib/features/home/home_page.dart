@@ -13,14 +13,19 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorPalette.backGroundColor,
       body: SingleChildScrollView(
-        child: Column(
+        child: PageView(
           children: [
-            Container(
-              height:height*0.1 ,
-              width: width,
-              color: ColorPalette.AppbarbackGroundColor,
+            Column(
+              children: [
+                Container(
+                  height:height*0.1 ,
+                  width: width,
+                  color: ColorPalette.AppbarbackGroundColor,
+                ),
+                LandingSection(),
+              ],
             ),
-            LandingSection(),
+
           ],
         ),
       ),
