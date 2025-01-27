@@ -18,6 +18,10 @@ class ImageConstants {
   //elements
 
   static const textCircle = "assets/images/text_circle.png";
+  static const work1 = "assets/icons/work1.png";
+  static const work2 = "assets/icons/work2.png";
+  static const work3 = "assets/icons/work3.png";
+  static const work4 = "assets/icons/work4.png";
 
 
 }

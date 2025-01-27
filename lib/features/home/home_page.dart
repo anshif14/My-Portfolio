@@ -1,31 +1,35 @@
 import 'package:anshif_portolio/common/color_pallette.dart';
-import 'package:anshif_portolio/common/variables.dart';
+import 'package:anshif_portolio/common/image_contants.dart';
+import 'package:anshif_portolio/features/home/landing_section.dart';
+import 'package:anshif_portolio/features/home/orbit_section.dart';
+import 'package:anshif_portolio/features/home/work_experience_section.dart';
 import 'package:flutter/material.dart';
-import 'landing_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    height = MediaQuery.of(context).size.height;
-    width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: ColorPalette.backGroundColor,
+      backgroundColor: ColorPalette.darkBackground,
       body: SingleChildScrollView(
-        child: PageView(
+        physics: const BouncingScrollPhysics(),
+        child: Column(
           children: [
-            Column(
+            Stack(
               children: [
-                Container(
-                  height:height*0.1 ,
-                  width: width,
-                  color: ColorPalette.AppbarbackGroundColor,
-                ),
                 LandingSection(),
+                Positioned(
+                  right: 0,
+                  child: Image.asset(
+                    ImageConstants.glowEffect1,
+                    height: 400,
+                  ),
+                ),
               ],
             ),
-
+            const WorkExperienceSection(),
+            const OrbitSection(),
           ],
         ),
       ),
