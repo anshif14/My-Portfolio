@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27047660075",
+    "project_id": "anshif-4ae5e",
+    "storage_bucket": "anshif-4ae5e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27047660075:android:02f6ff86288b4260b5f86e",
+        "android_client_info": {
+          "package_name": "com.example.anshif_portolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqzzu5fl3Lf6O704SFC8aFbvN7VKxY_lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
