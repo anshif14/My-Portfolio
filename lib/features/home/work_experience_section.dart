@@ -160,7 +160,7 @@ class _WorkExperienceSectionState extends State<WorkExperienceSection> with Sing
                                 ? 'First Logic Meta LAB'
                                 : index == 2
                                 ? 'First Logic Institute of Technology'
-                                : 'CIB on the Mobile',
+                                : 'Softroniics',
                             'Take your client onboard seamlessly by our amazing tool of digital onboard process.',
                             icons[index],
                             index,
